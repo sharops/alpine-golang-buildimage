@@ -2,7 +2,7 @@ alpine-golang-buildimage
 ========================
 
 This repository contains the sources for the following [docker](https://docker.io) base images:
-- [`lacion/alpine-golang-buildimage`]
+- [`sharops/alpine-golang-buildimage`]
 
 ## Usage
 
@@ -10,7 +10,7 @@ This Image is intedend to be used in multi stage docker builds and is not for fi
 about multistage build in this [blog post](https://www.critiqus.com/post/multi-stage-docker-builds/)
 
 ```
-FROM lacion/alpine-golang-buildimage
+FROM iopsthecloud/alpine-golang-buildimage
 
 ADD . /go/src/github.com/lacion/test
 WORKDIR /go/src/github.com/lacion/test
@@ -22,7 +22,7 @@ RUN go build *.go
 
 ```bash
 # Pull image
-git clone ssh://git@github.com/lacion/alpine-golang-buildimage.git
+git clone ssh://git@github.com/sharops/alpine-golang-buildimage.git
 cd alpine-golang-buildimage
 
 # hack hack hack
