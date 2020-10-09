@@ -1,11 +1,11 @@
 FROM alpine:3.10.2
 
-ARG VERSION=1.13
-ARG CHECKSUM=3fc0b8b6101d42efd7da1da3029c0a13f22079c0c37ef9730209d8ec665bf122
+ARG VERSION=1.15.2
+ARG CHECKSUM=28bf9d0bcde251011caae230a4a05d917b172ea203f2a62f2c2f9533589d4b4d
 
 LABEL golang_version="$VERSION"
-LABEL maintainer="luismmorales@gmail.com"
-LABEL repo="https://github.com/lacion/alpine-golang-buildimage"
+LABEL maintainer="renaud@sharops.dev"
+LABEL repo="https://github.com/sharops/alpine-golang-buildimage"
 
 RUN apk add --no-cache --update curl \
     grep \
